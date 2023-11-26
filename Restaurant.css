@@ -1,0 +1,196 @@
+body,h1,h3,h2,hr,p{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(206, 0, 0);
+}
+header h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(46, 46, 138);
+}
+nav{
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+.logo{
+    border: 1px solid;
+    background-color: black;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    display: flex;
+}
+#link li{
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#link a:hover{
+    color: yellow;
+}
+
+.landing{
+    background-image: url("burger.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100wm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 0px 20%;
+}
+.container1 h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 1em;
+}
+.landing button{
+    padding: .3em;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 20px;
+    border: 1px solid yellow;
+}
+.container2{
+    /* margin: 1.5em; */
+    display: flex;
+}
+.container2 div{
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(15px 20px 5px );
+    /* box-shadow: 15px 20px 2px; */
+    border-radius: 10px;
+    height: 140px;
+    width: 90px;
+}
+.first{
+    background-image: url("icons8-iron-man-48.png");
+    background-size: cover;
+    background-position: center;
+    /* height: 140px;
+    width: 90px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.second{
+    background-image: url("burger.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container2 a{
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid yellow;
+}
+h1{
+    text-align: center;
+    color: red;
+}
+.fries{
+    background-image: url("French\ fries.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    width: 90vw;
+}
+.pizza{
+    background-image: url("pizza.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    width: 90vw;
+}
+.noodles{
+    background-image: url("noodles.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    width: 90vw;
+}
+.products div{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.products h1{
+    margin-bottom: 20px;
+}
+.products a{
+    background-color: yellow;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: .3em;
+    border: 1px solid yellow;
+}
+.container2 a:hover,.products a:hover,button:hover{
+    background-color: red;
+    border: 1px solid white;
+}
+footer{
+    background-color: aliceblue;
+    min-height: 10px;
+    padding: 5px;
+}
+@media (min-width:600px){
+    .container2 div{
+        height: 140px;
+        width: 130px;
+    }
+    .products .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        row-gap: 15px;
+
+    }
+    .grid div{
+        margin: 0;
+        border-radius: .7em;
+        height: 300px;
+        width: 100%;
+    }
+    .noodles{
+        grid-column: 1/3;
+    }
+}
+@media (min-width:801px){
+    .container2 div{
+        width: 300px;
+    }
+    .products .grid{
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+}
